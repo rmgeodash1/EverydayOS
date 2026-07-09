@@ -1,56 +1,67 @@
-# EverydayOS
-> **EverydayOS is an open-source personal toolkit that combines productivity, file management, security, and AI-powered utilities in one simple app.**
+<div align="center">
+  <h1>🏠 EverydayOS</h1>
+  <p><em>Your intelligent assistant for everyday digital life</em></p>
+  
+  [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://python.org)
+  [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](CONTRIBUTING.md)
+  [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+</div>
 
-# 🌍 EverydayOS
+---
 
-> Your personal operating system for everyday life.
+## 🌟 What is EverydayOS?
 
-EverydayOS is an open-source digital assistant that helps you organize, manage, and simplify your daily digital workflow.
+**EverydayOS** is a growing collection of intelligent, privacy-first tools for your daily digital life. Think of it as an operating system for your everyday tasks — but open source, local-first, and built by the community.
 
-Instead of using dozens of separate tools, EverydayOS brings essential utilities into one privacy-focused application.
+### 🧰 Available Tools
 
-## ✨ Features
+| Tool | Status | Description |
+|------|--------|-------------|
+| 📁 **Sortify** | ✅ v1.0 | Intelligent file organizer |
+| 🔐 **Vault** | 🚧 Planned | Password manager |
+| ✅ **Focus** | 🚧 Planned | Smart to-do with AI prioritization |
+| 🔄 **Convert** | 🚧 Planned | Universal converter (units, currencies, formats) |
+| 🧹 **Clean** | 🚧 Planned | Safe disk cleaner |
+| 📝 **Note** | 🚧 Planned | Quick note taker |
 
-### 📁 Smart File Organizer
-Automatically organize your files:
-- Images
-- Documents
-- Videos
-- Code
-- Archives
+---
 
-Features:
-- Smart categorization
-- Duplicate detection
-- Custom rules
-- Preview mode
-- Undo history
+## 📁 Sortify — File Organizer
 
-### ✅ Productivity
-Coming soon:
-- Smart tasks
-- Reminders
-- Notes
-- Calendar integration
+### The Problem
 
-### 🔐 Privacy Tools
-Coming soon:
-- Password manager
-- Local data storage
-- Security utilities
+We all have that folder. You know the one. **Downloads**. **Desktop**. The digital junk drawer with 847 files from who-knows-when, mixing work documents with vacation photos and random memes.
 
-### 🤖 AI Assistant
-Coming soon:
-- Intelligent file suggestions
-- Automated organization
-- Personal workflows
+### The Solution
 
-## 🎯 Vision
+Sortify watches your folders and keeps them organized — automatically, intelligently, and safely.
 
-EverydayOS aims to become the open-source assistant that helps everyone manage their digital life.
+### ✨ Key Features
 
-Simple. Private. Customizable.
+- **🔄 Smart Organization** — Sort files by type, date, or custom rules
+- **👁️ Preview Mode** — See what will happen before moving anything (`--dry-run`)
+- **↩️ Undo** — Changed your mind? One command reverts everything
+- **🎨 Content Detection** — Recognizes files by content, not just extension
+- **⚙️ Custom Rules** — Your folders, your rules (YAML configuration)
+- **📊 Visual Reports** — See exactly what was organized
+- **🛡️ Safe by Default** — No file is ever deleted, only organized
 
-## 📜 License
+### 🚀 Quick Start
 
-MIT
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/EverydayOS.git
+cd EverydayOS
+
+# Install
+pip install -e .
+
+# Organize your Downloads (with preview first!)
+everydayos sortify organize ~/Downloads --dry-run
+
+# Looks good? Run it for real
+everydayos sortify organize ~/Downloads
+
+# Need to undo?
+everydayos sortify undo ~/Downloads
